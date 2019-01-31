@@ -4,7 +4,7 @@ Package for Data Science Project
 Installation via
 ``` r
 # install.packages("devtools")
-devtools::install_github("DavZim/colorTable")
+devtools::install_github("Ifitrains/AirBnBCopenhagen")
 ```
 
 ```
