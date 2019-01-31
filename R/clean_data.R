@@ -19,14 +19,15 @@
 #'
 
 
-clean_data <- function(x) {
+clean_data <- function(x){
   x  %>%
     filter(host_identity_verified == "TRUE" & number_of_reviews > 3)  %>%
     mutate(cleaning_fee_dkk = as.numeric(gsub("[\\$,]", "", cleaning_fee))) %>%
     mutate(price_dkk = as.numeric(gsub("[\\$,]", "", price))) %>%
     mutate(extra_people_dkk = as.numeric(gsub("[\\$,]", "", extra_people))) %>%
-    mutate(security_deposit_dkk = as.numeric(gsub("[\\$,]", "", airbnb_clean$security_deposit))) %>%
+    mutate(security_deposit_dkk = as.numeric(gsub("[\\$,]", "", security_deposit))) %>%
     filter(price_dkk > 0 & price_dkk < 7400)
 }
+
 
 
