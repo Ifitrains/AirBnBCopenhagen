@@ -1,0 +1,28 @@
+Package: AirBnBCopenhagen
+Title: Data Analysis of AirBnB data
+Version: 1.13.1
+Authors@R: 
+    person(given = "Julian",
+           family = "Kohlruss",
+           role = c("aut", "cre"),
+           email = "j.kohlruss@zeppelin-university.net")
+Description: Contains functions for analysing AirBnB data provided from Airbnb.inside.com
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Imports:
+    magrittr,
+    dplyr,
+    hrbrthemes,
+    ggplot2,
+    rvest,
+    purrr,
+    geosphere,
+    kableExtra,
+    stringr,
+    viridis,
+    leaflet,
+    leaflet.extras
+Suggests: 
+    testthat
+RoxygenNote: 6.1.1
